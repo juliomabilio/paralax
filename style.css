@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    background: transparent;
+    position: fixed;
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+.header{
+    background-image: url('img0.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.header .row{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont{
+    
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.cont p{
+    width: 300px;
+}
+
+.cont .row{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .5s ease-out;
+}
+.btn:hover{
+    color: rgb(11, 11, 11);
+    background-color: #fff;
+}
+.cont2{
+    transition: .3s ease-out;
+    background-image: url('img2.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.cont2 h1,p{
+    z-index: 9;
+}
+
+.cont2:hover{
+    filter: brightness(.3);
+}
+
+.cont2 .row{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cont2 p{
+    width: 300px;
+}
+
+.footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-color: rgb(24, 23, 23);
+}
+
+.footer .row{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+.header h1, .header p{
+    animation: flutuacao 2s ease-in-out infinite;
+}
+
+@keyframes flutuacao{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
